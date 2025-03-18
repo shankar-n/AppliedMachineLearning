@@ -1,2 +1,9 @@
 [core]
     no_scm = True
+    remote = myremote
+['remote "myremote"']
+    url = gdrive://1g6qxjyDsyhbiEB76BCzJbHpVlKr3G9ty
+    gdrive_client_id = 801419145696-73d8ge5coqg85qgfhurie9a16bmtn4pr.apps.googleusercontent.com
+    gdrive_client_secret = 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
+    gdrive_service_account_user_email = shajaganbpgc@gmail.com
+    gdrive_acknowledge_abuse = true
