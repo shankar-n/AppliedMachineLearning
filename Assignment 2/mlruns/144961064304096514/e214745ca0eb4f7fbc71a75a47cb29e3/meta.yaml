@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Shankar/Desktop/goat-ipython/goat-vault/goat-vault/01%20-%20Notes/03%20-%20Resources/Codes/CMI/AML/Assignment%202/mlruns/144961064304096514/e214745ca0eb4f7fbc71a75a47cb29e3/artifacts
+end_time: 1742308132917
+entry_point_name: ''
+experiment_id: '144961064304096514'
+lifecycle_stage: active
+run_id: e214745ca0eb4f7fbc71a75a47cb29e3
+run_name: chill-bug-160
+run_uuid: e214745ca0eb4f7fbc71a75a47cb29e3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742308121596
+status: 3
+tags: []
+user_id: Shankar

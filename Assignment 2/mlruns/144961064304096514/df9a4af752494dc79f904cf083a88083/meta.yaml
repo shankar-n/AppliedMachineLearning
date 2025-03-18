@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Shankar/Desktop/goat-ipython/goat-vault/goat-vault/01%20-%20Notes/03%20-%20Resources/Codes/CMI/AML/Assignment%202/mlruns/144961064304096514/df9a4af752494dc79f904cf083a88083/artifacts
+end_time: 1742308160623
+entry_point_name: ''
+experiment_id: '144961064304096514'
+lifecycle_stage: active
+run_id: df9a4af752494dc79f904cf083a88083
+run_name: learned-cow-757
+run_uuid: df9a4af752494dc79f904cf083a88083
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742308137148
+status: 3
+tags: []
+user_id: Shankar

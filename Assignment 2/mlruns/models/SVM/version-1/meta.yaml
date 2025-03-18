@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1742308164749
+current_stage: None
+description: null
+last_updated_timestamp: 1742308164749
+name: SVM
+run_id: ec746fb69fde472c8a9673aefff8b2ce
+run_link: null
+source: file:///C:/Users/Shankar/Desktop/goat-ipython/goat-vault/goat-vault/01%20-%20Notes/03%20-%20Resources/Codes/CMI/AML/Assignment%202/mlruns/144961064304096514/ec746fb69fde472c8a9673aefff8b2ce/artifacts/ham-spam-models
+status: READY
+status_message: null
+storage_location: file:///C:/Users/Shankar/Desktop/goat-ipython/goat-vault/goat-vault/01%20-%20Notes/03%20-%20Resources/Codes/CMI/AML/Assignment%202/mlruns/144961064304096514/ec746fb69fde472c8a9673aefff8b2ce/artifacts/ham-spam-models
+user_id: null
+version: 1

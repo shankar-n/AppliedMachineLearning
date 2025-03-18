@@ -1,0 +1,21 @@
+artifact_path: ham-spam-models
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+mlflow_version: 2.21.0
+model_size_bytes: 273559
+model_uuid: 62dc71cc1ed84236965f9662f8196159
+prompts: null
+run_id: f86b4b0620ad4dbcb1448a5baa02b0fc
+utc_time_created: '2025-03-18 14:28:24.342631'
