@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Shankar/Desktop/goat-ipython/goat-vault/goat-vault/01%20-%20Notes/03%20-%20Resources/Codes/CMI/AML/Assignment%202/mlruns/144961064304096514/c8743b4252574d32b79f106e3c51652f/artifacts
+end_time: 1742308121596
+entry_point_name: ''
+experiment_id: '144961064304096514'
+lifecycle_stage: active
+run_id: c8743b4252574d32b79f106e3c51652f
+run_name: LogisticRegression
+run_uuid: c8743b4252574d32b79f106e3c51652f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742308108095
+status: 3
+tags: []
+user_id: Shankar

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Shankar/Desktop/goat-ipython/goat-vault/goat-vault/01%20-%20Notes/03%20-%20Resources/Codes/CMI/AML/Assignment%202/mlruns/144961064304096514/9c8ca4ca920f43878191e2335732eb1d/artifacts
+end_time: 1742308104154
+entry_point_name: ''
+experiment_id: '144961064304096514'
+lifecycle_stage: active
+run_id: 9c8ca4ca920f43878191e2335732eb1d
+run_name: rumbling-whale-126
+run_uuid: 9c8ca4ca920f43878191e2335732eb1d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742308090265
+status: 3
+tags: []
+user_id: Shankar

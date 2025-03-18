@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Shankar/Desktop/goat-ipython/goat-vault/goat-vault/01%20-%20Notes/03%20-%20Resources/Codes/CMI/AML/Assignment%202/mlruns/144961064304096514/d0bc8f3845ba44c5a422cc1efbed2fc9/artifacts
+end_time: 1742308173118
+entry_point_name: ''
+experiment_id: '144961064304096514'
+lifecycle_stage: active
+run_id: d0bc8f3845ba44c5a422cc1efbed2fc9
+run_name: nimble-grouse-217
+run_uuid: d0bc8f3845ba44c5a422cc1efbed2fc9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742308164781
+status: 3
+tags: []
+user_id: Shankar

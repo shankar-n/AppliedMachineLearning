@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Shankar/Desktop/goat-ipython/goat-vault/goat-vault/01%20-%20Notes/03%20-%20Resources/Codes/CMI/AML/Assignment%202/mlruns/144961064304096514/7b6f81974688477c8e4b137aeb81e95b/artifacts
+end_time: 1742308177398
+entry_point_name: ''
+experiment_id: '144961064304096514'
+lifecycle_stage: active
+run_id: 7b6f81974688477c8e4b137aeb81e95b
+run_name: DecisionTree
+run_uuid: 7b6f81974688477c8e4b137aeb81e95b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742308164781
+status: 3
+tags: []
+user_id: Shankar
