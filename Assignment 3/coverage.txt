@@ -1,0 +1,19 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.0, pytest-8.3.5, pluggy-1.5.0
+rootdir: C:\Users\Shankar\Desktop\goat-ipython\goat-vault\goat-vault\01 - Notes\03 - Resources\Codes\CMI\AML\Assignment 3
+plugins: cov-6.1.0
+collected 2 items
+
+test.py ..                                                               [100%]
+
+=============================== tests coverage ================================
+_______________ coverage: platform win32, python 3.11.0-final-0 _______________
+
+Name       Stmts   Miss  Cover
+------------------------------
+app.py        16     16     0%
+score.py       6      0   100%
+test.py       30      0   100%
+------------------------------
+TOTAL         52     16    69%
+============================== 2 passed in 4.50s ==============================
