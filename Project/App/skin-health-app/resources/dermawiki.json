@@ -1,0 +1,348 @@
+{
+  "skin_conditions": {
+    "Pre-Cancerous & Cancerous Lesions": {
+      "Actinic Keratosis": {
+        "image_url": "https://example.com/actinic_keratosis.jpg",
+        "symptoms": "Rough, scaly patches on sun-exposed skin.",
+        "cure_remedy": "Cryotherapy, topical chemotherapy.",
+        "home_remedies": "Aloe vera, green tea extract.",
+        "severity": "Requires medical attention to prevent progression to carcinoma."
+      },
+      "Basal Cell Carcinoma": {
+        "image_url": "https://example.com/basal_cell_carcinoma.jpg",
+        "symptoms": "Pearly or waxy bump, often with visible blood vessels.",
+        "cure_remedy": "Surgical removal, radiation therapy.",
+        "home_remedies": "Sunscreen use, avoiding excessive sun exposure.",
+        "severity": "Needs immediate medical intervention."
+      },
+      "Squamous Cell Carcinoma": {
+        "image_url": "https://example.com/squamous_cell_carcinoma.jpg",
+        "symptoms": "Red, scaly patches or open sores that do not heal.",
+        "cure_remedy": "Surgical excision, radiation therapy.",
+        "home_remedies": "Green tea extract, turmeric paste.",
+        "severity": "High risk—requires urgent medical attention."
+      },
+      "Melanoma": {
+        "image_url": "https://example.com/melanoma.jpg",
+        "symptoms": "Irregularly shaped dark mole, rapid growth.",
+        "cure_remedy": "Surgical removal, immunotherapy.",
+        "home_remedies": "Antioxidant-rich diet, avoiding UV exposure.",
+        "severity": "Highly dangerous—urgent medical attention required."
+      }
+    },
+    "Benign Lesions & Growths": {
+      "Benign Keratosis": {
+        "image_url": "https://example.com/benign_keratosis.jpg",
+        "symptoms": "Brown, rough patches resembling warts.",
+        "cure_remedy": "Cryotherapy, laser therapy.",
+        "home_remedies": "Apple cider vinegar, coconut oil.",
+        "severity": "Usually harmless but should be monitored."
+      },
+      "Dermatofibroma": {
+        "image_url": "https://example.com/dermatofibroma.jpg",
+        "symptoms": "Firm, reddish-brown nodules.",
+        "cure_remedy": "Surgical excision if bothersome.",
+        "home_remedies": "Vitamin E oil, turmeric paste.",
+        "severity": "Benign, but consult a doctor if painful."
+      },
+      "Seborrheic Keratosis": {
+        "image_url": "https://example.com/seborrheic_keratosis.jpg",
+        "symptoms": "Waxy, scaly, raised growths that appear brown or black.",
+        "cure_remedy": "Cryotherapy, electrosurgery.",
+        "home_remedies": "Tea tree oil, coconut oil.",
+        "severity": "Non-cancerous, but removal may be needed for cosmetic reasons."
+      },
+      "Solar Lentigo": {
+        "image_url": "https://example.com/solar_lentigo.jpg",
+        "symptoms": "Flat, brown spots caused by sun exposure.",
+        "cure_remedy": "Laser therapy, chemical peels.",
+        "home_remedies": "Lemon juice, aloe vera.",
+        "severity": "Harmless but may require monitoring for changes."
+      },
+      "Cherry Angioma": {
+        "image_url": "https://example.com/cherry_angioma.jpg",
+        "symptoms": "Small, red or purple bumps caused by dilated blood vessels.",
+        "cure_remedy": "Laser treatment, electrocautery.",
+        "home_remedies": "Vitamin K cream, cold compress.",
+        "severity": "Benign, but removal may be desired for cosmetic reasons."
+      }
+    },
+    "Pigmented Skin Disorders": {
+      "Melanocytic Nevi (Common Moles)": {
+        "image_url": "https://example.com/melanocytic_nevi.jpg",
+        "symptoms": "Small, round, brown or black spots on the skin.",
+        "cure_remedy": "No treatment needed unless suspicious.",
+        "home_remedies": "Regular monitoring, sunscreen use.",
+        "severity": "Low risk but should be checked for changes."
+      },
+      "Dysplastic Nevi (Atypical Moles)": {
+        "image_url": "https://example.com/dysplastic_nevi.jpg",
+        "symptoms": "Irregularly shaped moles with uneven color.",
+        "cure_remedy": "Surgical removal if signs of malignancy appear.",
+        "home_remedies": "Avoid excessive sun exposure, use sunscreen.",
+        "severity": "Moderate risk—monitor for changes."
+      },
+      "Lentigo (Sun Spots)": {
+        "image_url": "https://example.com/lentigo.jpg",
+        "symptoms": "Flat, brown spots caused by sun exposure.",
+        "cure_remedy": "Laser therapy, chemical peels.",
+        "home_remedies": "Lemon juice, aloe vera.",
+        "severity": "Harmless but may require monitoring for changes."
+      },
+      "Vitiligo": {
+        "image_url": "https://example.com/vitiligo.jpg",
+        "symptoms": "Loss of skin pigment in patches.",
+        "cure_remedy": "Topical corticosteroids, phototherapy.",
+        "home_remedies": "Turmeric and mustard oil application.",
+        "severity": "Non-threatening but may require cosmetic treatment."
+      },
+      "Melasma": {
+        "image_url": "https://example.com/melasma.jpg",
+        "symptoms": "Brown or gray patches on the face.",
+        "cure_remedy": "Hydroquinone creams, laser therapy.",
+        "home_remedies": "Aloe vera, lemon juice.",
+        "severity": "Cosmetic concern—treatment available."
+      },
+      "Post-Inflammatory Hyperpigmentation": {
+        "image_url": "https://example.com/post_inflammatory_hyperpigmentation.jpg",
+        "symptoms": "Darkened skin areas after injury or inflammation.",
+        "cure_remedy": "Chemical peels, retinoids.",
+        "home_remedies": "Vitamin C serum, aloe vera.",
+        "severity": "Harmless but may require cosmetic treatment."
+      }
+    },
+    "Vascular Conditions": {
+      "Vascular Lesions": {
+        "image_url": "https://example.com/vascular_lesions.jpg",
+        "symptoms": "Red or purple spots, often raised.",
+        "cure_remedy": "Laser therapy, surgical removal.",
+        "home_remedies": "Cold compress, vitamin K cream.",
+        "severity": "Usually harmless but may require cosmetic treatment."
+      },
+      "Cherry Angioma": {
+        "image_url": "https://example.com/cherry_angioma.jpg",
+        "symptoms": "Small, red or purple bumps caused by dilated blood vessels.",
+        "cure_remedy": "Laser treatment, electrocautery.",
+        "home_remedies": "Vitamin K cream, cold compress.",
+        "severity": "Benign, but removal may be desired for cosmetic reasons."
+      },
+      "Hemangioma": {
+        "image_url": "https://example.com/hemangioma.jpg",
+        "symptoms": "Raised, red or bluish growths caused by abnormal blood vessels.",
+        "cure_remedy": "Observation, laser therapy, surgical removal.",
+        "home_remedies": "Cold compress, avoiding trauma to the area.",
+        "severity": "Usually harmless but may require treatment if large or growing."
+      },
+      "Port-Wine Stain": {
+        "image_url": "https://example.com/port_wine_stain.jpg",
+        "symptoms": "Flat, red or purple birthmark that does not fade over time.",
+        "cure_remedy": "Laser therapy, cosmetic camouflage.",
+        "home_remedies": "Sun protection, gentle skincare.",
+        "severity": "Harmless but may require cosmetic treatment."
+      },
+      "Spider Angioma": {
+        "image_url": "https://example.com/spider_angioma.jpg",
+        "symptoms": "Small, red spot with radiating blood vessels.",
+        "cure_remedy": "Laser therapy, electrocautery.",
+        "home_remedies": "Vitamin K cream, cold compress.",
+        "severity": "Usually benign but may indicate liver disease if multiple lesions appear."
+      }
+    },
+    "Inflammatory Skin Conditions": {
+      "Acne Vulgaris": {
+        "image_url": "https://example.com/acne_vulgaris.jpg",
+        "symptoms": "Red pimples, blackheads, whiteheads, and cysts on the face, chest, and back.",
+        "cure_remedy": "Topical retinoids, benzoyl peroxide, oral antibiotics.",
+        "home_remedies": "Tea tree oil, honey masks, green tea extract.",
+        "severity": "Mild to severe—consult a dermatologist for persistent cases."
+      },
+      "Rosacea": {
+        "image_url": "https://example.com/rosacea.jpg",
+        "symptoms": "Facial redness, visible blood vessels, and occasional bumps or pustules.",
+        "cure_remedy": "Topical metronidazole, laser therapy.",
+        "home_remedies": "Chamomile compress, aloe vera.",
+        "severity": "Chronic condition—requires long-term management."
+      },
+      "Eczema (Atopic Dermatitis)": {
+        "image_url": "https://example.com/eczema.jpg",
+        "symptoms": "Dry, itchy, inflamed skin, often in patches.",
+        "cure_remedy": "Topical corticosteroids, antihistamines.",
+        "home_remedies": "Oatmeal baths, coconut oil.",
+        "severity": "Can be severe—consult a dermatologist for persistent flare-ups."
+      },
+      "Psoriasis": {
+        "image_url": "https://example.com/psoriasis.jpg",
+        "symptoms": "Thick, scaly patches of skin, often on elbows, knees, and scalp.",
+        "cure_remedy": "Topical steroids, phototherapy, biologic treatments.",
+        "home_remedies": "Aloe vera, omega-3 supplements.",
+        "severity": "Chronic condition—requires medical management."
+      },
+      "Seborrheic Dermatitis": {
+        "image_url": "https://example.com/seborrheic_dermatitis.jpg",
+        "symptoms": "Red, greasy skin with flaky white or yellow scales, often on the scalp.",
+        "cure_remedy": "Antifungal shampoos, topical steroids.",
+        "home_remedies": "Apple cider vinegar rinse, tea tree oil.",
+        "severity": "Mild to moderate—manageable with treatment."
+      },
+      "Contact Dermatitis": {
+        "image_url": "https://example.com/contact_dermatitis.jpg",
+        "symptoms": "Red, itchy rash caused by skin contact with allergens or irritants.",
+        "cure_remedy": "Avoidance of triggers, topical corticosteroids.",
+        "home_remedies": "Cold compress, oatmeal baths.",
+        "severity": "Mild to severe—depends on exposure and reaction."
+      }
+    },
+    "Infectious Skin Diseases": {
+      "Impetigo": {
+        "image_url": "https://example.com/impetigo.jpg",
+        "symptoms": "Red sores that rupture, ooze, and form a yellow-brown crust.",
+        "cure_remedy": "Topical or oral antibiotics.",
+        "home_remedies": "Honey, tea tree oil.",
+        "severity": "Highly contagious—requires medical treatment."
+      },
+      "Cellulitis": {
+        "image_url": "https://example.com/cellulitis.jpg",
+        "symptoms": "Painful, red, swollen skin with warmth and tenderness.",
+        "cure_remedy": "Oral antibiotics, hospitalization in severe cases.",
+        "home_remedies": "Turmeric paste, cold compress.",
+        "severity": "Serious infection—requires urgent medical attention."
+      },
+      "Ringworm (Tinea)": {
+        "image_url": "https://example.com/ringworm.jpg",
+        "symptoms": "Circular, red, scaly rash with a raised border.",
+        "cure_remedy": "Antifungal creams or oral antifungals.",
+        "home_remedies": "Garlic paste, apple cider vinegar.",
+        "severity": "Contagious but treatable with antifungals."
+      },
+      "Herpes Simplex": {
+        "image_url": "https://example.com/herpes_simplex.jpg",
+        "symptoms": "Painful blisters or sores around the mouth or genitals.",
+        "cure_remedy": "Antiviral medications.",
+        "home_remedies": "Lemon balm, lysine supplements.",
+        "severity": "Chronic condition—requires management."
+      },
+      "Warts (HPV)": {
+        "image_url": "https://example.com/warts.jpg",
+        "symptoms": "Small, rough growths on the skin caused by HPV.",
+        "cure_remedy": "Cryotherapy, salicylic acid treatments.",
+        "home_remedies": "Banana peel, duct tape method.",
+        "severity": "Benign but may require removal."
+      },
+      "Scabies": {
+        "image_url": "https://example.com/scabies.jpg",
+        "symptoms": "Intense itching, especially at night, with small burrow tracks.",
+        "cure_remedy": "Prescription topical treatments.",
+        "home_remedies": "Neem oil, tea tree oil.",
+        "severity": "Highly contagious—requires medical treatment."
+      }
+    },
+    "Autoimmune & Rare Dermatological Disorders": {
+      "Lupus Erythematosus": {
+        "image_url": "https://example.com/lupus_erythematosus.jpg",
+        "symptoms": "Butterfly-shaped rash on the face, joint pain, fatigue.",
+        "cure_remedy": "Immunosuppressants, corticosteroids.",
+        "home_remedies": "Omega-3 supplements, turmeric.",
+        "severity": "Chronic autoimmune disease—requires medical management."
+      },
+      "Scleroderma": {
+        "image_url": "https://example.com/scleroderma.jpg",
+        "symptoms": "Hardening and tightening of the skin, Raynaud’s phenomenon.",
+        "cure_remedy": "Immunosuppressants, physical therapy.",
+        "home_remedies": "Vitamin D, gentle skin moisturizers.",
+        "severity": "Progressive condition—requires specialized care."
+      },
+      "Pemphigus": {
+        "image_url": "https://example.com/pemphigus.jpg",
+        "symptoms": "Painful blisters on the skin and mucous membranes.",
+        "cure_remedy": "Corticosteroids, immunosuppressants.",
+        "home_remedies": "Aloe vera, coconut oil.",
+        "severity": "Serious autoimmune disorder—requires urgent medical attention."
+      },
+      "Bullous Pemphigoid": {
+        "image_url": "https://example.com/bullous_pemphigoid.jpg",
+        "symptoms": "Large, fluid-filled blisters on the skin.",
+        "cure_remedy": "Topical steroids, immunosuppressants.",
+        "home_remedies": "Oatmeal baths, vitamin E oil.",
+        "severity": "Requires medical treatment—can be life-threatening in severe cases."
+      },
+      "Ichthyosis": {
+        "image_url": "https://example.com/ichthyosis.jpg",
+        "symptoms": "Dry, scaly skin resembling fish scales.",
+        "cure_remedy": "Moisturizers, keratolytic agents.",
+        "home_remedies": "Coconut oil, urea-based creams.",
+        "severity": "Genetic condition—requires lifelong management."
+      },
+      "Epidermolysis Bullosa": {
+        "image_url": "https://example.com/epidermolysis_bullosa.jpg",
+        "symptoms": "Fragile skin that blisters easily.",
+        "cure_remedy": "Wound care, pain management.",
+        "home_remedies": "Aloe vera, gentle skin protection.",
+        "severity": "Severe genetic disorder—requires specialized care."
+      }
+    },
+    "Eczemas & Dermatitis": {
+      "Atopic Dermatitis": {
+        "image_url": "https://example.com/atopic_dermatitis.jpg",
+        "symptoms": "Dry, itchy, inflamed skin, often in patches.",
+        "cure_remedy": "Topical corticosteroids, antihistamines.",
+        "home_remedies": "Oatmeal baths, coconut oil.",
+        "severity": "Can be severe—consult a dermatologist for persistent flare-ups."
+      },
+      "Contact Dermatitis": {
+        "image_url": "https://example.com/contact_dermatitis.jpg",
+        "symptoms": "Red, itchy rash caused by skin contact with allergens or irritants.",
+        "cure_remedy": "Avoidance of triggers, topical corticosteroids.",
+        "home_remedies": "Cold compress, oatmeal baths.",
+        "severity": "Mild to severe—depends on exposure and reaction."
+      }
+    },
+    "Fungal & Bacterial Infections": {
+      "Tinea (Ringworm)": {
+        "image_url": "https://example.com/tinea.jpg",
+        "symptoms": "Circular, red, scaly rash with a raised border.",
+        "cure_remedy": "Antifungal creams or oral antifungals.",
+        "home_remedies": "Garlic paste, apple cider vinegar.",
+        "severity": "Contagious but treatable with antifungals."
+      },
+      "Impetigo": {
+        "image_url": "https://example.com/impetigo.jpg",
+        "symptoms": "Red sores that rupture, ooze, and form a yellow-brown crust.",
+        "cure_remedy": "Topical or oral antibiotics.",
+        "home_remedies": "Honey, tea tree oil.",
+        "severity": "Highly contagious—requires medical treatment."
+      }
+    },
+    "Autoimmune & Rare Disorders": {
+      "Lupus Erythematosus": {
+        "image_url": "https://example.com/lupus_erythematosus.jpg",
+        "symptoms": "Butterfly-shaped rash on the face, joint pain, fatigue.",
+        "cure_remedy": "Immunosuppressants, corticosteroids.",
+        "home_remedies": "Omega-3 supplements, turmeric.",
+        "severity": "Chronic autoimmune disease—requires medical management."
+      },
+      "Scleroderma": {
+        "image_url": "https://example.com/scleroderma.jpg",
+        "symptoms": "Hardening and tightening of the skin, Raynaud’s phenomenon.",
+        "cure_remedy": "Immunosuppressants, physical therapy.",
+        "home_remedies": "Vitamin D, gentle skin moisturizers.",
+        "severity": "Progressive condition—requires specialized care."
+      }
+    },
+    "Cosmetic & Common Skin Concerns": {
+      "Acne Vulgaris": {
+        "image_url": "https://example.com/acne_vulgaris.jpg",
+        "symptoms": "Red pimples, blackheads, whiteheads, and cysts on the face, chest, and back.",
+        "cure_remedy": "Topical retinoids, benzoyl peroxide, oral antibiotics.",
+        "home_remedies": "Tea tree oil, honey masks, green tea extract.",
+        "severity": "Mild to severe—consult a dermatologist for persistent cases."
+      },
+      "Melasma": {
+        "image_url": "https://example.com/melasma.jpg",
+        "symptoms": "Brown or gray patches on the face.",
+        "cure_remedy": "Hydroquinone creams, laser therapy.",
+        "home_remedies": "Aloe vera, lemon juice.",
+        "severity": "Cosmetic concern—treatment available."
+      }
+    }
+  }
+}

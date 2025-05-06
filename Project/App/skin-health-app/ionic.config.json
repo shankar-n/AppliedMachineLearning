@@ -1,0 +1,7 @@
+{
+  "name": "skin-health-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
