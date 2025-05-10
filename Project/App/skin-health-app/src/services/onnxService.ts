@@ -1,8 +1,9 @@
 import * as ort from "onnxruntime-web";
+import { fileToONNXTensor } from "./imageService";
 
 export async function loadONNXModel() {
   try {
-    const session = await ort.InferenceSession.create("resources/model.onnx");
+    const session = await ort.InferenceSession.create("assets/model.onnx");
     console.log("✅ ONNX Model Loaded Successfully!");
     return session;
   } catch (error) {
@@ -10,33 +11,51 @@ export async function loadONNXModel() {
   }
 }
 
-function normalizeTensor(tensor: ort.Tensor): ort.Tensor {
-  const mean: number[] = [0.485, 0.456, 0.406];
-  const std: number[] = [0.229, 0.224, 0.225];
-
-  const data = tensor.data as Float32Array;
-  for (let i = 0; i < data.length; i++) {
-    const channel = i % 3; // Get Red, Green, or Blue index
-    data[i] = (data[i] / 255 - mean[channel]) / std[channel];
-  }
-
-  return tensor;
+export function softmax(logits: Float32Array): Float32Array {
+  // ✅ Compute Softmax for an array of logits
+  const maxLogit = Math.max(...logits); // Prevent overflow
+  const exps = logits.map((x) => Math.exp(x - maxLogit));
+  const sumExps = exps.reduce((sum, x) => sum + x, 0);
+  return exps.map((x) => x / sumExps);
 }
 
-export function preprocessImage(imageData: Float32Array) {
-  // Assuming imageData is a Float32Array with shape [3, 224, 224]
-  return normalizeTensor(
-    new ort.Tensor("float32", imageData, [1, 3, 224, 224])
-  );
+interface PredictionResult {
+  value: number;
+  index: number;
 }
 
-export async function predict(imageData: Float32Array) {
+interface TopPredictions {
+  top_labels: number[];
+  top_probs: number[];
+}
+
+export function getTop5Predictions(results: Float32Array): TopPredictions {
+  const probs = softmax(results);
+
+  const sortedIndices: PredictionResult[] = Array.from(probs)
+    .map((value: number, index: number): PredictionResult => ({ value, index }))
+    .sort((a: PredictionResult, b: PredictionResult) => b.value - a.value) // Sort descending
+    .slice(0, 5); // Take top 5
+
+  return {
+    top_labels: sortedIndices.map((item: PredictionResult) => item.index),
+    top_probs: sortedIndices.map((item: PredictionResult) => item.value),
+  };
+}
+
+export async function runOnnxInference(file: File) {
   const session = await loadONNXModel();
-  if (!session) return;
+  if (session) {
+    const inputTensor = await fileToONNXTensor(file);
 
-  const inputTensor = preprocessImage(imageData);
-  const results = await session.run({ input: inputTensor });
+    // console.log("Input Tensor:", inputTensor);
 
-  console.log("🔥 Prediction Result:", results.output);
-  return results.output;
+    const results = await session.run({ input: inputTensor });
+    const topPredictions = getTop5Predictions(
+      results.output.data as Float32Array
+    );
+    // console.log("🔥 Prediction Result:", topPredictions);
+
+    return topPredictions;
+  }
 }

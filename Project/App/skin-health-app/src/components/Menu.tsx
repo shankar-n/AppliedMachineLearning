@@ -22,6 +22,8 @@ import {
   scanSharp,
   peopleOutline,
   peopleSharp,
+  informationCircleSharp,
+  informationCircleOutline,
 } from "ionicons/icons";
 import "./Menu.css";
 
@@ -62,6 +64,12 @@ const appPages: AppPage[] = [
     url: "/account",
     iosIcon: peopleOutline,
     mdIcon: peopleSharp,
+  },
+  {
+    title: "Acknowledgments",
+    url: "/thanks",
+    iosIcon: informationCircleOutline,
+    mdIcon: informationCircleSharp,
   },
 ];
 

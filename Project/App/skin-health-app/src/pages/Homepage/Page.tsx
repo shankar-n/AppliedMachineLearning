@@ -27,7 +27,7 @@ const HomePage: React.FC = () => {
         {/* Hero Banner */}
         <div className="hero-container">
           <img
-            src="/resources/home_1.jpg"
+            src="/assets/home_1.jpg"
             alt="Healthy Skin Tips"
             className="hero-image"
           />
@@ -47,7 +47,7 @@ const HomePage: React.FC = () => {
             <IonCol>
               <div className="fact-box">
                 <img
-                  src="/resources/home_2.png"
+                  src="/assets/home_2.png"
                   alt="Sunscreen Application"
                   className="fact-image"
                 />
@@ -60,7 +60,7 @@ const HomePage: React.FC = () => {
             <IonCol>
               <div className="fact-box">
                 <img
-                  src="/resources/home_3.png"
+                  src="/assets/home_3.png"
                   alt="Hydration"
                   className="fact-image"
                 />
@@ -75,7 +75,7 @@ const HomePage: React.FC = () => {
             <IonCol>
               <div className="fact-box">
                 <img
-                  src="/resources/home_4.png"
+                  src="/assets/home_4.png"
                   alt="Healthy Food"
                   className="fact-image"
                 />
@@ -88,7 +88,7 @@ const HomePage: React.FC = () => {
             <IonCol>
               <div className="fact-box">
                 <img
-                  src="/resources/home_5.png"
+                  src="/assets/home_5.png"
                   alt="Skin Care Routine"
                   className="fact-image"
                 />
