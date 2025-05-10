@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import {
   IonPage,
   IonHeader,
@@ -10,7 +11,23 @@ import {
   IonButton,
   IonButtons,
   IonMenuButton,
+  IonModal,
+  IonFooter,
 } from "@ionic/react";
+
+import DiagnosisResult from "../../components/DiagnosisResult";
+import { getDiagnosisHistory, getClassMap } from "../../services/utilService";
+import { Capacitor } from "@capacitor/core";
+
+interface ScanRecord {
+  timestamp: string;
+  prediction: {
+    top_labels: number[];
+    top_probs: number[];
+    xai_output: string;
+  };
+  condition?: string; // Dynamically retrieved label
+}
 
 const AccountPage: React.FC = () => {
   const userData = {
@@ -20,10 +37,38 @@ const AccountPage: React.FC = () => {
     weight: "Unknown",
   };
 
-  const pastScans = [
-    { id: 1, condition: "Eczema", date: "2025-04-20" },
-    { id: 2, condition: "Psoriasis", date: "2025-04-18" },
-  ];
+  const [scanHistory, setScanHistory] = useState<ScanRecord[]>([]);
+  const [selectedScan, setSelectedScan] = useState<ScanRecord | null>(null);
+  const [showModal, setShowModal] = useState(false);
+
+  // Load past diagnoses and map labels
+  useEffect(() => {
+    const fetchScans = async () => {
+      try {
+        const results = await getDiagnosisHistory(); // Fetch stored diagnosis data
+        const classMap = await getClassMap(); // Fetch class mappings
+
+        console.log("Results:", results);
+        // Process results and map condition names
+        const processedScans = results.map((scan: ScanRecord) => ({
+          ...scan,
+          condition: classMap[scan.prediction.top_labels[0]] || "Unknown", // Map predicted condition
+        }));
+
+        setScanHistory(processedScans);
+      } catch (error) {
+        console.error("Error loading scan history:", error);
+      }
+    };
+
+    fetchScans();
+  }, []);
+
+  // Open DiagnosisResult in a Modal on click
+  const handleOpenScan = (scan: ScanRecord) => {
+    setSelectedScan(scan);
+    setShowModal(true);
+  };
 
   return (
     <IonPage>
@@ -58,21 +103,55 @@ const AccountPage: React.FC = () => {
             </IonLabel>
           </IonItem>
         </IonList>
+        <IonButton expand="full" color="primary">
+          Edit Profile
+        </IonButton>
 
-        <IonTitle className="ion-padding-top">Past Scans</IonTitle>
+        {/* Past Scans Section */}
+        <IonTitle
+          className="ion-padding-top"
+          style={{ padding: "20px", color: "red" }}
+        >
+          Past Scans
+        </IonTitle>
         <IonList>
-          {pastScans.map((scan) => (
-            <IonItem key={scan.id}>
+          {scanHistory.map((scan, index) => (
+            <IonItem key={index} button onClick={() => handleOpenScan(scan)}>
               <IonLabel>
-                {scan.condition} - {scan.date}
+                {scan.condition} -{" "}
+                {new Date(scan.timestamp).toLocaleString("en-US", {
+                  day: "numeric",
+                  month: "short",
+                  hour: "2-digit",
+                  minute: "2-digit",
+                  hour12: true,
+                })}
               </IonLabel>
             </IonItem>
           ))}
         </IonList>
 
-        <IonButton expand="full" color="primary">
-          Edit Profile
-        </IonButton>
+        {/* Diagnosis Result Modal */}
+        <IonModal isOpen={showModal} onDidDismiss={() => setShowModal(false)}>
+          <IonButton
+            style={{ margin: "10px" }}
+            expand="full"
+            onClick={() => setShowModal(false)}
+          >
+            Close
+          </IonButton>
+          <IonContent className="ion-padding">
+            {selectedScan && (
+              <IonContent className="ion-padding">
+                <DiagnosisResult
+                  top_labels={selectedScan.prediction.top_labels}
+                  top_probs={selectedScan.prediction.top_probs}
+                  xai_output={selectedScan.prediction.xai_output}
+                />
+              </IonContent>
+            )}
+          </IonContent>
+        </IonModal>
       </IonContent>
     </IonPage>
   );

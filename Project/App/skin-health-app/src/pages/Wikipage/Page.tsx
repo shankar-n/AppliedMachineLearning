@@ -34,7 +34,7 @@ const WikiPage: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    fetch("/resources/dermawiki.json")
+    fetch("/assets/dermawiki.json")
       .then((response) => response.json())
       .then((data) => setSkinConditions(data.skin_conditions))
       .catch((error) => console.error("Error fetching data:", error));

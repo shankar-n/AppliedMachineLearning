@@ -11,6 +11,8 @@ import {
 import { Geolocation } from "@capacitor/geolocation";
 
 const FindClinicPage: React.FC = () => {
+  const apiKey = process.env.GOOGLE_MAPS_API_KEY;
+
   const [location, setLocation] = useState<{ lat: number; lng: number } | null>(
     null
   );
@@ -41,12 +43,12 @@ const FindClinicPage: React.FC = () => {
           <IonTitle>Find a Clinic</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent className="ion-padding">
+      <IonContent className="ion-height">
         {location ? (
           <iframe
             width="100%"
-            height="600px"
-            src={`https://www.google.com/maps/embed/v1/search?key=AIzaSyAW9VF42DyMxp2Xnkxw_Kw2324yfr2kq9s&q=skin+clinic&center=${location.lat},${location.lng}&zoom=14`}
+            height="100%"
+            src={`https://www.google.com/maps/embed/v1/search?key=${apiKey}&q=skin+clinic&center=${location.lat},${location.lng}&zoom=14`}
             style={{ border: 0 }}
           ></iframe>
         ) : (

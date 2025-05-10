@@ -42,10 +42,14 @@ import WikiPage from "./pages/Wikipage/Page";
 import FindClinicPage from "./pages/FindClinicpage/Page";
 import AccountPage from "./pages/Accountpage/Page";
 import DiagnosisPage from "./pages/Diagnosispage/Page";
+import ThanksPage from "./pages/ThanksPage/Page";
+import { requestPermissions } from "./services/permissionsService";
 
 setupIonicReact();
 
 const App: React.FC = () => {
+  requestPermissions().then((status) => console.log("Permissions:", status));
+
   return (
     <IonApp>
       <IonReactRouter>
@@ -64,6 +68,7 @@ const App: React.FC = () => {
             />
             <Route path="/diagnosis" exact={true} component={DiagnosisPage} />
             <Route path="/account" exact={true} component={AccountPage} />
+            <Route path="/thanks" exact={true} component={ThanksPage} />
           </IonRouterOutlet>
         </IonSplitPane>
       </IonReactRouter>
